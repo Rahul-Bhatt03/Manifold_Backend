@@ -9,6 +9,7 @@ import contactRoutes from './routes/contactRoutes.js';
 import aboutRoutes from './routes/aboutUsRoutes.js';
 import connectDB from './config/Db.js';
 import uploadRoutes from './routes/uploadRoutes.js';
+import employeeRoutes from './routes/employeeRoutes.js';
 
 dotenv.config();
 
@@ -31,6 +32,7 @@ app.use('/api/services', serviceRoutes);
 app.use('/api/contacts', contactRoutes);
 app.use('/api/abouts', aboutRoutes);
 app.use('/api/upload', uploadRoutes);
+app.use('/api/employees', employeeRoutes);
 
 
 // Start server
